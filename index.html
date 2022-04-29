@@ -18,7 +18,7 @@
       <nav class="header-navigation">
         <a href="./index.html" class="header-logo link">Web<span class="header-logo-color">Studio</span></span></a>
         <ul class="header-list list">
-            <li class="header-item"><a class="header-link link" href="./index.html">Студия</a></li>
+            <li class="header-item"><div class="header-decoration"><a class="header-link link" href="./index.html">Студия</div></a></li>
             <li class="header-item"><a class="header-link link" href="./portfolio.html">Портфолио</a></li>
             <li class="header-item"><a class="header-link link" href="">Контакты</a></li>
         </ul>
@@ -39,7 +39,7 @@
         <section class="inform">
             <div class="container">
             <h1 class="inform-text">Эффективные решения для вашего бизнеса</h1>
-            <button class="inform-botton" type="button">Заказать услугу</button>
+            <button class="inform-botton" type="button" data-modal-open>Заказать услугу</button>
             </div>       
         </section>
         <section class="text-content">
@@ -73,9 +73,9 @@
             <div class="container">
             <h2 class="image-top">   Чем мы занимаемся </h2>
             <ul class="image-list list">
-                <li class="image-item"><img src="./images/img.jpg" alt="картинка"  height="294" width="370" ></li>
-                <li class="image-item"><img src="./images/img_1.jpg" alt="картинка" height="294" width="370"></li>
-                <li class="image-item"><img src="./images/img_2.jpg" alt="картинка" height="294" width="370"></li>
+                <li class="image-item"><div class="image-top-wrap"><img src="./images/img.jpg" alt="картинка"  height="294" width="370" ><p class="image-list-text">Десктопные приложения</p></div></li>
+                <li class="image-item"><div class="image-top-wrap"><img src="./images/img_1.jpg" alt="картинка"  height="294" width="370" ><p class="image-list-text">Мобильные приложения</p></div></li>
+                <li class="image-item"><div class="image-top-wrap"><img src="./images/img_2.jpg" alt="картинка"  height="294" width="370" ><p class="image-list-text">Дизайнерские решения</p></div></li>
             </ul>
             </div>
         </section>
@@ -284,6 +284,13 @@
             </div>
         </div>
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-button" data-modal-close><svg class="modal-icon" width="30px" height="30px">
+                               <use href="./images/icons.svg#icon-close"></use>
+                           </svg></button>
+        </div>
+    </div>
+  <script src="./js/modal.js"></script>
 </body>
 </html>
